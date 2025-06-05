@@ -63,8 +63,8 @@ const Benefits = () => {
               <div className="p-6 font-mono text-sm">
                 <div className="text-green-400 mb-2">// AI Suggestion: Try using a map function here</div>
                 <div className="text-blue-400 mb-1">const <span className="text-yellow-300">projects</span> = [</div>
-                <div className="text-purple-300 ml-4">{ name: <span className="text-green-300">"Todo App"</span>, status: <span className="text-green-300">"completed"</span> },</div>
-                <div className="text-purple-300 ml-4">{ name: <span className="text-green-300">"Weather Widget"</span>, status: <span className="text-orange-300">"in-progress"</span> }</div>
+                <div className="text-purple-300 ml-4">{'{ name: "Todo App", status: "completed" },'}</div>
+                <div className="text-purple-300 ml-4">{'{ name: "Weather Widget", status: "in-progress" }'}</div>
                 <div className="text-blue-400">];</div>
                 
                 {/* Progress indicators */}

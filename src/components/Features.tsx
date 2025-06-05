@@ -19,7 +19,7 @@ const Features = () => {
     {
       icon: Target,
       title: "🎯 Built for Career Changers & Learners",
-      description: "Whether you're pivoting into tech or onboarding into a new team, our IDE helps you ramp up faster, stay in flow, and track progress with measurable outcomes.",
+      description: "Whether you're pivoting into tech or onboarding into a new team, rebooED helps you ramp up faster, stay in flow, and track progress with measurable outcomes.",
       color: "text-green-600"
     },
     {

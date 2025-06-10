@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Code, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -17,7 +16,7 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center">
               <Code className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold text-white">rebooED</span>
+            <span className="text-2xl font-bold text-white">rebootED</span>
           </div>
 
           {/* Desktop Navigation */}

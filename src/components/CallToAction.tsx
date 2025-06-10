@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Code, Users } from "lucide-react";
 
@@ -43,7 +42,7 @@ const CallToAction = () => {
         </h2>
         
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Join thousands of developers who are transforming their careers with rebooED. 
+          Join thousands of developers who are transforming their careers with rebootED. 
           Start building real projects today and watch your skills evolve in real-time.
         </p>
 

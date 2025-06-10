@@ -57,7 +57,7 @@ const About = () => {
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-            About rebooED
+            About rebootED
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed">
             We're on a mission to transform how people learn to code by creating the world's first truly adaptive learning IDE.
@@ -82,7 +82,7 @@ const About = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4">Our Solution</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  rebooED uses advanced AI to create a personalized learning journey for every user. Our adaptive IDE learns from your coding patterns, identifies knowledge gaps, and dynamically adjusts content to keep you in the optimal learning zone.
+                  rebootED uses advanced AI to create a personalized learning journey for every user. Our adaptive IDE learns from your coding patterns, identifies knowledge gaps, and dynamically adjusts content to keep you in the optimal learning zone.
                 </p>
               </div>
             </div>

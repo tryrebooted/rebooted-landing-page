@@ -23,9 +23,6 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-slate-600 hover:text-slate-900 transition-colors">Features</a>
-            <a href="#benefits" className="text-slate-600 hover:text-slate-900 transition-colors">Benefits</a>
-            <a href="#pricing" className="text-slate-600 hover:text-slate-900 transition-colors">Pricing</a>
             <Link to="/about" className="text-slate-600 hover:text-slate-900 transition-colors">About</Link>
           </div>
 
@@ -52,9 +49,6 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-slate-200 bg-white">
             <div className="flex flex-col space-y-4">
-              <a href="#features" className="text-slate-600 hover:text-slate-900 transition-colors px-2 py-1">Features</a>
-              <a href="#benefits" className="text-slate-600 hover:text-slate-900 transition-colors px-2 py-1">Benefits</a>
-              <a href="#pricing" className="text-slate-600 hover:text-slate-900 transition-colors px-2 py-1">Pricing</a>
               <Link to="/about" className="text-slate-600 hover:text-slate-900 transition-colors px-2 py-1">About</Link>
               <div className="pt-4 border-t border-slate-200 space-y-2">
                 <Button variant="ghost" className="w-full justify-start text-slate-600 hover:text-slate-900 hover:bg-slate-100">

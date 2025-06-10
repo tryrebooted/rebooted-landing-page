@@ -31,14 +31,11 @@ const Hero = () => {
             creates a fully personalized, project-based learning journey.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          {/* CTA Button */}
+          <div className="flex justify-center items-center mb-16">
             <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-6 text-xl font-medium transition-all duration-300 transform hover:scale-105 rounded-full">
               Start Learning Now
               <ArrowRight className="ml-3 w-6 h-6" />
-            </Button>
-            <Button variant="outline" size="lg" className="px-10 py-6 text-xl font-medium border-2 border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white transition-all duration-300 rounded-full">
-              Watch Demo
             </Button>
           </div>
 

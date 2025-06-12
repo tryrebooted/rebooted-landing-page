@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# rebootEd
 
-## Project info
+> AI-Powered Learning That Actually Works
 
-**URL**: https://lovable.dev/projects/0391e0e4-0aab-4716-a9b0-e3de032392e0
+## The Problem
 
-## How can I edit this code?
+Traditional training tools are generic, static, and hard to finish. Employees get bored or overwhelmed, managers can't see real skill growth, and companies struggle to build practical AI capability.
 
-There are several ways of editing your application.
+## Who We Help
 
-**Use Lovable**
+- **L&D / HR Teams** - Get measurable upskilling outcomes and clear visibility into skill development across your organization
+- **Engineering & Product Managers** - Build faster, AI-literate teams with adaptive learning paths that keep everyone in flow state  
+- **Employees** - Learn efficiently without guessing what to do next with personalized paths that adapt to your pace and style
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0391e0e4-0aab-4716-a9b0-e3de032392e0) and start prompting.
+## Our Solution
 
-Changes made via Lovable will be committed automatically to this repo.
+rebootEd lets you complete real projects in an environment that dynamically adapts its difficulty on the fly, keeping learners engaged while leaders track real progress.
 
-**Use your preferred IDE**
+No busy-work courses, no guesswork: just targeted growth that sticks.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Key Benefits
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- ✅ Adaptive learning paths that keep you in flow state
+- ✅ Project-based learning instead of static courses  
+- ✅ Clear progress tracking for managers and learners
+- ✅ Practical AI skills through hands-on experience
+- ✅ No more guesswork about what to learn next
+- ✅ Measurable outcomes and skill development
 
-Follow these steps:
+## Status
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🚀 **Pre-Launch** - We're validating our solution with early partners. 
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+*Specifics to come as we validate with early partners.*
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0391e0e4-0aab-4716-a9b0-e3de032392e0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Lovable Project**: https://lovable.dev/projects/0391e0e4-0aab-4716-a9b0-e3de032392e0

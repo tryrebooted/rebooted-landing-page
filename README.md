@@ -14,7 +14,7 @@ Traditional training tools are generic, static, and hard to finish. Employees ge
 
 ## Our Solution
 
-rebootEd lets you complete real projects in an environment that dynamically adapts its difficulty on the fly, keeping learners engaged while leaders track real progress.
+rebootEd lets you complete real projects in an environment that dynamically adapts to your learning style on the fly, keeping learners engaged while leaders track real progress.
 
 No busy-work courses, no guesswork: just targeted growth that sticks.
 

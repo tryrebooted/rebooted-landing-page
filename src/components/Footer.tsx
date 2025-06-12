@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             
             <p className="text-slate-300 mb-8 max-w-md text-lg leading-relaxed">
-              Complete real projects in an environment that dynamically adapts its difficulty on the fly, 
+              Complete real projects in an environment that dynamically adapts to your learning style on the fly, 
               keeping learners engaged while leaders track real progress.
             </p>
             

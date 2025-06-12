@@ -31,19 +31,19 @@ const Benefits = () => {
             </Badge>
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Learning Technology
+              Why Teams Choose
               <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent block">
-                That Actually Works
+                rebootEd
               </span>
             </h2>
             
             <div className="mb-8">
               <p className="text-xl text-purple-100 mb-4 leading-relaxed">
-                rebootEd lets you complete real projects in an environment that dynamically adapts its difficulty
+                Move beyond static training materials that nobody finishes
               </p>
               <Separator className="bg-purple-700 my-4" />
               <p className="text-lg text-purple-200 leading-relaxed">
-                Keeping learners engaged on the fly while leaders track real progress. No busy-work courses, no guesswork: just targeted growth that sticks.
+                Our platform delivers measurable skill development through hands-on projects that adapt to each learner's pace and style.
               </p>
             </div>
 

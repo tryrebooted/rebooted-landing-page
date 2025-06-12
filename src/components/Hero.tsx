@@ -40,8 +40,8 @@ const Hero = () => {
             </p>
             <Separator className="bg-slate-700 my-6 max-w-md mx-auto" />
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-              rebootEd lets you complete real projects in an environment that dynamically adapts its 
-              difficulty on the fly, keeping learners engaged while leaders track real progress.
+              rebootEd lets you complete real projects in an environment that dynamically adapts to your 
+              learning style on the fly, keeping learners engaged while leaders track real progress.
             </p>
           </div>
 

@@ -25,11 +25,11 @@ const Hero = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
-            AI-Powered Course Creation
+            Build Better Courses,
             <br />
-            That Actually
+            9x Faster—
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
-              {" "}Works
+              {" "}with AI
             </span>
           </h1>
 
@@ -38,6 +38,21 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-6">
               Creating effective training courses is time-consuming, complex, and expensive.
             </p>
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <div className="text-xl md:text-2xl font-semibold text-purple-300">
+                "AI lets teams create custom learning in minutes, not weeks"
+              </div>
+              <a 
+                href="https://www.docebo.com/learning-network/blog/enterprise-ai-and-learning-development/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <Badge variant="outline" className="border-purple-400/30 text-purple-300 bg-purple-900/20">
+                  Docebo, 2025
+                </Badge>
+              </a>
+            </div>
             <Separator className="bg-slate-700 my-6 max-w-md mx-auto" />
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
               rebootEd empowers L&D teams to create compelling, effective courses using intelligent AI tools that 

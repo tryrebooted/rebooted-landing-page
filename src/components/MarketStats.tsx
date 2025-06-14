@@ -49,15 +49,15 @@ const MarketStats = () => {
               </h3>
               
               <div className="mb-6">
-                <div className="text-5xl font-bold text-red-600 mb-2">8-12</div>
+                <div className="text-4xl font-bold text-red-600 mb-2">43-55</div>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  weeks to create a single high-quality training course
+                  hours of development time needed to create one hour of instructor-led training
                 </p>
               </div>
               
               <div className="flex items-center gap-2 text-sm text-slate-600">
-                <span>Industry Average:</span>
-                <span className="text-red-600 font-medium">80% of time spent on content creation, not strategy</span>
+                <span>Source:</span>
+                <span className="text-red-600 font-medium">Chapman Alliance</span>
               </div>
             </div>
           </div>
@@ -83,18 +83,19 @@ const MarketStats = () => {
               
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-4xl font-bold text-green-600 mb-1">75%</div>
-                  <p className="text-base text-slate-700">faster course development</p>
+                  <div className="text-4xl font-bold text-green-600 mb-1">9x</div>
+                  <p className="text-base text-slate-700">AI accelerates course creation</p>
                 </div>
                 <Separator className="bg-green-200" />
                 <div>
-                  <div className="text-4xl font-bold text-green-600 mb-1">60%</div>
-                  <p className="text-base text-slate-700">reduction in manual content work</p>
+                  <div className="text-4xl font-bold text-green-600 mb-1">25%</div>
+                  <p className="text-base text-slate-700">of L&D content budgets are wasted</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-2 text-sm text-slate-600">
-                <span className="text-green-600 font-medium">Focus on strategy & outcomes, not manual tasks</span>
+                <span>Sources:</span>
+                <span className="text-green-600 font-medium">Articulate 2024, Go1 2024</span>
               </div>
             </div>
           </div>

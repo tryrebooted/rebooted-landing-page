@@ -1,5 +1,5 @@
 # rebootEd
-
+(bye)
 > AI-Powered Learning That Actually Works
 
 ## The Problem

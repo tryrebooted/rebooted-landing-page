@@ -1,4 +1,4 @@
-import { CheckCircle, ArrowRight, Code2, Lightbulb, Users2, TrendingUp, Zap, Brain } from "lucide-react";
+import { CheckCircle, ArrowRight, PenTool, Lightbulb, Users2, TrendingUp, Zap, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -6,12 +6,12 @@ import { Separator } from "@/components/ui/separator";
 
 const Benefits = () => {
   const benefits = [
-    "Adaptive learning paths that keep you in flow state",
-    "Project-based learning instead of static courses",
-    "Clear progress tracking for managers and learners",
-    "Practical AI skills through hands-on experience",
-    "No more guesswork about what to learn next",
-    "Measurable outcomes and skill development"
+    "Rapid course development with AI-powered content generation",
+    "Built-in interactivity and engagement optimization",
+    "Intelligent formatting and content structuring",
+    "Streamlined content updates and maintenance workflows",
+    "Quality assurance tools and consistency checks",
+    "Scalable templates and frameworks across your organization"
   ];
 
   return (
@@ -31,7 +31,7 @@ const Benefits = () => {
             </Badge>
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Why Teams Choose
+              Why L&D Teams Choose
               <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent block">
                 rebootEd
               </span>
@@ -39,11 +39,11 @@ const Benefits = () => {
             
             <div className="mb-8">
               <p className="text-xl text-purple-100 mb-4 leading-relaxed">
-                Move beyond static training materials that nobody finishes
+                Move beyond endless content creation cycles and manual formatting headaches
               </p>
               <Separator className="bg-purple-700 my-4" />
               <p className="text-lg text-purple-200 leading-relaxed">
-                Our platform delivers measurable skill development through hands-on projects that adapt to each learner's pace and style.
+                Our intelligent AI tools streamline the entire course development process, helping you create better courses faster with consistent quality.
               </p>
             </div>
 
@@ -70,7 +70,7 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Right side - Enhanced IDE mockup */}
+          {/* Right side - Enhanced course creation mockup */}
           <div className="relative">
             {/* Main card */}
             <div className="bg-slate-800/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-slate-700 relative overflow-hidden">
@@ -82,7 +82,7 @@ const Benefits = () => {
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <div className="ml-4 text-slate-400 text-sm font-mono">rebootEd-platform.dev</div>
+                <div className="ml-4 text-slate-400 text-sm font-mono">rebootEd-creator.dev</div>
               </div>
               
               {/* Content sections */}
@@ -90,32 +90,32 @@ const Benefits = () => {
                 {/* Current project section */}
                 <div className="bg-slate-700/50 rounded-lg p-4 border border-slate-600">
                   <div className="flex items-center gap-3 mb-3">
-                    <Brain className="w-5 h-5 text-purple-400" />
-                    <span className="text-white font-medium">Current Learning Path</span>
+                    <PenTool className="w-5 h-5 text-purple-400" />
+                    <span className="text-white font-medium">Course Creation Project</span>
                     <Badge variant="outline" className="border-green-400 text-green-400 text-xs">
                       In Progress
                     </Badge>
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">AI Chatbot Development</h3>
-                  <Progress value={65} className="h-2 mb-2" />
-                  <div className="text-sm text-slate-300">65% complete • Estimated completion: 3 days</div>
+                  <h3 className="text-lg font-semibold text-white mb-2">Sales Training Fundamentals</h3>
+                  <Progress value={78} className="h-2 mb-2" />
+                  <div className="text-sm text-slate-300">78% complete • 15 modules created • 3 hours saved</div>
                 </div>
 
-                {/* Skills section */}
+                {/* Tools section */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-slate-700/30 rounded-lg p-3">
                     <div className="flex items-center gap-2 mb-2">
-                      <Code2 className="w-4 h-4 text-blue-400" />
-                      <span className="text-sm text-slate-300">Next Module</span>
+                      <Lightbulb className="w-4 h-4 text-blue-400" />
+                      <span className="text-sm text-slate-300">AI Suggestion</span>
                     </div>
-                    <div className="text-white font-medium">API Integration</div>
+                    <div className="text-white font-medium">Add Quiz</div>
                   </div>
                   <div className="bg-slate-700/30 rounded-lg p-3">
                     <div className="flex items-center gap-2 mb-2">
-                      <TrendingUp className="w-4 h-4 text-green-400" />
-                      <span className="text-sm text-slate-300">Skill Level</span>
+                      <Settings className="w-4 h-4 text-green-400" />
+                      <span className="text-sm text-slate-300">Quality Check</span>
                     </div>
-                    <div className="text-white font-medium">Intermediate</div>
+                    <div className="text-white font-medium">Passed</div>
                   </div>
                 </div>
 
@@ -123,9 +123,9 @@ const Benefits = () => {
                 <div className="bg-gradient-to-r from-purple-900/50 to-blue-900/50 rounded-lg p-4 border border-purple-700/50">
                   <div className="flex items-center gap-2 mb-2">
                     <Zap className="w-4 h-4 text-yellow-400" />
-                    <span className="text-sm text-purple-200">AI Insight</span>
+                    <span className="text-sm text-purple-200">AI Optimization</span>
                   </div>
-                  <p className="text-white text-sm">You're progressing 23% faster than average. Consider tackling async/await patterns next.</p>
+                  <p className="text-white text-sm">Content structure looks great! Consider adding interactive elements to modules 3-5 for better engagement.</p>
                 </div>
               </div>
             </div>

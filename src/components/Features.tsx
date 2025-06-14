@@ -1,4 +1,4 @@
-import { Brain, Code, Target, Users, Zap, TrendingUp } from "lucide-react";
+import { Brain, PenTool, Target, Users, Zap, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
@@ -8,16 +8,16 @@ const Features = () => {
     {
       icon: Brain,
       title: "L&D / HR Teams",
-      description: "Get measurable upskilling outcomes and clear visibility into skill development across your organization.",
+      description: "Create high-quality, engaging courses in a fraction of the time with AI-powered content generation, interactive elements, and built-in analytics.",
       color: "text-purple-600",
       bgColor: "from-purple-50 to-purple-100",
       borderColor: "border-purple-200",
-      badge: "Leadership"
+      badge: "Primary Users"
     },
     {
-      icon: Code,
-      title: "Engineering & Product Managers",
-      description: "Build faster, AI-literate teams with adaptive learning paths that keep everyone in flow state.",
+      icon: Users,
+      title: "Training Managers",
+      description: "Scale course creation across your organization with consistent quality and data-driven optimization tools.",
       color: "text-blue-600",
       bgColor: "from-blue-50 to-blue-100",
       borderColor: "border-blue-200",
@@ -25,39 +25,39 @@ const Features = () => {
     },
     {
       icon: Target,
-      title: "Employees",
-      description: "Learn efficiently without guessing what to do next. Our AI creates personalized paths that adapt to your pace and style.",
+      title: "Instructional Designers",
+      description: "Focus on strategy and learning outcomes while AI handles content structuring, formatting, and interactivity suggestions.",
       color: "text-green-600",
       bgColor: "from-green-50 to-green-100",
       borderColor: "border-green-200",
-      badge: "Individual"
+      badge: "Design"
     },
     {
       icon: Zap,
-      title: "No More Generic Training",
-      description: "Traditional courses are static and boring. rebootEd creates dynamic, project-based learning that keeps you engaged.",
+      title: "Rapid Content Generation",
+      description: "Transform course creation from weeks to hours with intelligent AI tools that handle content generation and structuring.",
       color: "text-orange-600",
       bgColor: "from-orange-50 to-orange-100",
       borderColor: "border-orange-200",
-      badge: "Innovation"
+      badge: "Efficiency"
     },
     {
-      icon: Users,
-      title: "Clear Progress Tracking",
-      description: "Managers get real-time insights into skill development, while learners see their growth in action.",
+      icon: PenTool,
+      title: "Smart Formatting & Structure",
+      description: "Intelligent formatting and content structuring tools ensure consistency and professional quality across all your courses.",
       color: "text-indigo-600",
       bgColor: "from-indigo-50 to-indigo-100",
       borderColor: "border-indigo-200",
-      badge: "Analytics"
+      badge: "Quality"
     },
     {
       icon: TrendingUp,
-      title: "Practical AI Capability",
-      description: "Build real AI skills through hands-on projects, not theoretical courses. Learn by doing, not by watching.",
+      title: "Scalable Templates & Frameworks",
+      description: "Build once, use everywhere. Create scalable templates and frameworks that maintain consistency across your organization.",
       color: "text-pink-600",
       bgColor: "from-pink-50 to-pink-100",
       borderColor: "border-pink-200",
-      badge: "Hands-on"
+      badge: "Scale"
     }
   ];
 
@@ -70,11 +70,11 @@ const Features = () => {
             Who We Help & How
           </Badge>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-            Built for Everyone in the
-            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> Learning Journey</span>
+            Built for L&D Teams &
+            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"> Course Creators</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            From individual learners to L&D teams, rebootEd adapts to meet everyone's needs with clear insights and measurable progress.
+            From individual instructional designers to enterprise L&D teams, rebootEd provides intelligent tools that make course creation faster, easier, and more effective.
           </p>
         </div>
 

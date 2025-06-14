@@ -1,4 +1,4 @@
-import { Code, Twitter, Linkedin, Github, Mail, Sparkles, Heart } from "lucide-react";
+import { PenTool, Twitter, Linkedin, Github, Mail, Sparkles, Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="relative group">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <Code className="w-7 h-7 text-white" />
+                  <PenTool className="w-7 h-7 text-white" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
               </div>
@@ -33,8 +33,7 @@ const Footer = () => {
             </div>
             
             <p className="text-slate-300 mb-8 max-w-md text-lg leading-relaxed">
-              Complete real projects in an environment that dynamically adapts to your learning style on the fly, 
-              keeping learners engaged while leaders track real progress.
+              Intelligent AI tools that help L&D teams create compelling, effective courses faster with streamlined development processes and smart content optimization.
             </p>
             
             <div className="flex space-x-4">
@@ -123,7 +122,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 mt-4 md:mt-0">
             <span className="text-slate-400 text-sm">Built with</span>
             <Heart className="w-4 h-4 text-red-400" />
-            <span className="text-slate-400 text-sm">for the future of learning</span>
+            <span className="text-slate-400 text-sm">for the future of course creation</span>
           </div>
         </div>
       </div>

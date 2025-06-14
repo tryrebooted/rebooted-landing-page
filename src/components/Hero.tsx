@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Code, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, PenTool, Sparkles, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
-            AI-Powered Learning
+            AI-Powered Course Creation
             <br />
             That Actually
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
@@ -36,12 +36,12 @@ const Hero = () => {
           {/* Subheading */}
           <div className="max-w-4xl mx-auto mb-12">
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-6">
-              Traditional training tools are generic, static, and hard to finish.
+              Creating effective training courses is time-consuming, complex, and expensive.
             </p>
             <Separator className="bg-slate-700 my-6 max-w-md mx-auto" />
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-              rebootEd lets you complete real projects in an environment that dynamically adapts to your 
-              learning style on the fly, keeping learners engaged while leaders track real progress.
+              rebootEd empowers L&D teams to create compelling, effective courses using intelligent AI tools that 
+              handle content generation, suggest interactive elements, and streamline the entire course development process.
             </p>
           </div>
 
@@ -49,14 +49,14 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Badge variant="outline" className="border-purple-400/30 text-purple-300 bg-purple-900/20 backdrop-blur-sm">
               <Zap className="w-3 h-3 mr-1" />
-              No Busy Work
+              Faster Development
             </Badge>
             <Badge variant="outline" className="border-blue-400/30 text-blue-300 bg-blue-900/20 backdrop-blur-sm">
-              <Code className="w-3 h-3 mr-1" />
-              Project-Based
+              <PenTool className="w-3 h-3 mr-1" />
+              Smart Content Tools
             </Badge>
             <Badge variant="outline" className="border-green-400/30 text-green-300 bg-green-900/20 backdrop-blur-sm">
-              Flow State Learning
+              Quality Assurance
             </Badge>
           </div>
 
@@ -82,7 +82,7 @@ const Hero = () => {
           <div className="flex justify-center">
             <div className="relative group">
               <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-2xl">
-                <Code className="w-10 h-10 text-white" />
+                <PenTool className="w-10 h-10 text-white" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300 -z-10"></div>
             </div>

@@ -57,7 +57,14 @@ const MarketStats = () => {
               
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <span>Source:</span>
-                <span className="text-red-600 font-medium">Chapman Alliance</span>
+                <a 
+                  href="https://understooduk.com/how-long-does-it-take-to-create-learning-the-time-intensive-task-of-designing-training/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 font-medium hover:underline transition-colors"
+                >
+                  Chapman Alliance
+                </a>
               </div>
             </div>
           </div>
@@ -83,8 +90,8 @@ const MarketStats = () => {
               
               <div className="space-y-4 mb-6">
                 <div>
-                  <div className="text-4xl font-bold text-green-600 mb-1">9x</div>
-                  <p className="text-base text-slate-700">AI accelerates course creation</p>
+                  <div className="text-4xl font-bold text-green-600 mb-1">50%</div>
+                  <p className="text-base text-slate-700">faster course development with AI-powered tools</p>
                 </div>
                 <Separator className="bg-green-200" />
                 <div>
@@ -95,7 +102,23 @@ const MarketStats = () => {
               
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <span>Sources:</span>
-                <span className="text-green-600 font-medium">Articulate 2024, Go1 2024</span>
+                <a 
+                  href="https://www.shiftelearning.com/blog/future-instructional-design-ai-era?utm_source=chatgpt.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 font-medium hover:underline transition-colors"
+                >
+                  Shift eLearning
+                </a>
+                <span className="text-green-600 font-medium">, </span>
+                <a 
+                  href="https://www.go1.com/blog/ld-leaders-real-challenges-with-training-content"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 font-medium hover:underline transition-colors"
+                >
+                  Go1 2024
+                </a>
               </div>
             </div>
           </div>

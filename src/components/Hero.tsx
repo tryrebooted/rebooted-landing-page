@@ -27,7 +27,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
             Build Better Courses,
             <br />
-            9x Faster—
+            50% Faster—
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
               {" "}with AI
             </span>

@@ -26,7 +26,7 @@ const Features = () => {
     {
       icon: Target,
       title: "Instructional Designers",
-      description: "Focus on strategy and learning outcomes while AI handles content structuring, formatting, and interactivity suggestions.",
+      description: "Focus on strategy and learning outcomes while AI handles content structuring, formatting, and generating interactive elements",
       color: "text-green-600",
       bgColor: "from-green-50 to-green-100",
       borderColor: "border-green-200",

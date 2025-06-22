@@ -22,9 +22,7 @@ const MarketStats = () => {
             The Course Creation
             <span className="bg-gradient-to-r from-red-600 to-orange-600 bg-clip-text text-transparent"> Bottleneck</span>
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            L&D teams spend too much time on manual content creation and not enough time on strategic learning outcomes and impact measurement.
-          </p>
+          
         </div>
 
         {/* Main stats grid */}
@@ -131,7 +129,7 @@ const MarketStats = () => {
             <div className="text-left">
               <div className="text-sm font-medium text-slate-600">The Solution</div>
               <div className="text-lg font-semibold text-slate-900">
-                L&D teams need intelligent tools for rapid course creation—not more manual processes
+                Learning and development teams need intelligent tools for rapid course creation—not more manual processes
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@ const Navigation = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-slate-900 group-hover:text-slate-700 transition-colors">rebootEd</span>
+              <span className="text-2xl font-bold text-slate-900 group-hover:text-slate-700 transition-colors">rebootED</span>
               <Badge variant="secondary" className="bg-purple-100 text-purple-700 text-xs px-2 py-1 hidden sm:inline-flex">
                 <Sparkles className="w-3 h-3 mr-1" />
                 Beta

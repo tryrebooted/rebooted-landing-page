@@ -36,7 +36,7 @@ const Hero = () => {
           {/* Subheading */}
           <div className="max-w-4xl mx-auto mb-12">
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-6">
-              Creating effective training courses is time-consuming, complex, and expensive.
+              Creating effective training courses is complex, expensive, and time-consuming.
             </p>
             <div className="flex items-center justify-center gap-2 mb-6">
               <div className="text-xl md:text-2xl font-semibold text-purple-300">
@@ -55,8 +55,8 @@ const Hero = () => {
             </div>
             <Separator className="bg-slate-700 my-6 max-w-md mx-auto" />
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-              rebootEd empowers L&D teams to create compelling, effective courses using intelligent AI tools that 
-              handle content generation, suggest interactive elements, and streamline the entire course development process.
+              rebootEd empowers learning and development teams to create compelling, effective courses by
+              handling content generation, suggest interactive elements, and streamline the entire course development process.
             </p>
           </div>
 
@@ -85,9 +85,8 @@ const Hero = () => {
               <ArrowRight className="ml-3 w-6 h-6" />
             </Button>
             <Button 
-              variant="outline" 
-              size="lg"
-              className="border-slate-600 text-slate-300 hover:bg-slate-800 px-8 py-6 text-lg rounded-xl backdrop-blur-sm"
+              size="lg" 
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-6 text-xl font-medium transition-all duration-300 transform hover:scale-105 rounded-xl shadow-2xl hover:shadow-purple-500/25"
             >
               Learn More
             </Button>

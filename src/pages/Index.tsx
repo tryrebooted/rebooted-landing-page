@@ -22,6 +22,7 @@ const Index = () => {
     //<Benefits />
     //
     //
+    //
   );
 };
 

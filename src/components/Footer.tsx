@@ -1,3 +1,4 @@
+
 import { PenTool, Twitter, Linkedin, Github, Mail, Sparkles, Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -117,7 +118,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm">
-            © 2024 rebootEd. All rights reserved.
+            © 2025 rebootEd. All rights reserved.
           </p>
           <div className="flex items-center gap-2 mt-4 md:mt-0">
             <span className="text-slate-400 text-sm">Built with</span>

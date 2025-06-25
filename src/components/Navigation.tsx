@@ -9,6 +9,15 @@ const Navigation = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const scrollToWaitlist = () => {
+    const waitlistSection = document.getElementById('waitlist-form');
+    if (waitlistSection) {
+      waitlistSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Close mobile menu if it's open
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200/50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,10 +41,10 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/about" className="text-slate-600 hover:text-purple-600 transition-colors duration-200 font-medium relative group">
+            {/* <Link to="/about" className="text-slate-600 hover:text-purple-600 transition-colors duration-200 font-medium relative group">
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-200 group-hover:w-full"></span>
-            </Link>
+            </Link> */}
             {/* <div className="text-slate-400 hover:text-slate-600 transition-colors duration-200 font-medium cursor-not-allowed relative group">
               Features
               <Badge variant="outline" className="absolute -top-2 -right-8 text-xs border-orange-200 text-orange-600 bg-orange-50">
@@ -52,7 +61,10 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
+            <Button 
+              onClick={scrollToWaitlist}
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105"
+            >
               Join Waitlist
             </Button>
           </div>
@@ -70,13 +82,13 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-slate-200/50 bg-white/95 backdrop-blur-lg">
             <div className="flex flex-col space-y-4">
-              <Link 
+              {/* <Link 
                 to="/about" 
                 className="text-slate-600 hover:text-purple-600 transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-purple-50 font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </Link>
+              </Link> */}
               {/* <div className="text-slate-400 px-3 py-2 font-medium flex items-center justify-between">
                 <span>Features</span>
                 <Badge variant="outline" className="text-xs border-orange-200 text-orange-600 bg-orange-50">
@@ -91,7 +103,10 @@ const Navigation = () => {
               </div> */}
               
               <div className="pt-4 border-t border-slate-200/50">
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg">
+                <Button 
+                  onClick={scrollToWaitlist}
+                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg"
+                >
                   Join Waitlist
                 </Button>
               </div>

@@ -24,10 +24,10 @@ const Hero = () => {
         <div className="animate-fade-in">
           {/* Status Badge */}
           <div className="flex justify-center mb-8">
-            <Badge variant="secondary" className="bg-slate-800/80 text-slate-300 border-slate-700 px-4 py-2 text-sm font-medium backdrop-blur-sm">
+            <div className="inline-flex items-center bg-slate-800/80 text-slate-300 border border-slate-700 px-4 py-2 text-sm font-medium backdrop-blur-sm rounded-full transition-transform duration-200 hover:scale-105">
               <Sparkles className="w-4 h-4 mr-2 text-purple-400" />
               Pre-Launch • Join Early Partners
-            </Badge>
+            </div>
           </div>
 
           {/* Main heading */}

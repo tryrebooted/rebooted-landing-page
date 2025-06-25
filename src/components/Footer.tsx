@@ -1,10 +1,23 @@
 
-import { PenTool, Twitter, Linkedin, Github, Mail, Sparkles, Heart } from "lucide-react";
+import { PenTool, Twitter, Linkedin, Github, Mail, Sparkles, Heart, Copy } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { useState } from "react";
 
 const Footer = () => {
+  const [copyStatus, setCopyStatus] = useState<'idle' | 'copied'>('idle');
+
+  const copyEmailToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText('tryrebooted@gmail.com');
+      setCopyStatus('copied');
+      setTimeout(() => setCopyStatus('idle'), 2000);
+    } catch (error) {
+      console.error('Failed to copy email:', error);
+    }
+  };
+
   return (
     <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 relative overflow-hidden">
       {/* Background decorations */}
@@ -14,9 +27,9 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div className="flex-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="relative group">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -38,85 +51,55 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-slate-400 hover:text-purple-400 hover:bg-purple-900/20 transition-all duration-200">
-                <Twitter className="w-5 h-5" />
-              </Button>
               <Button variant="ghost" size="icon" className="text-slate-400 hover:text-blue-400 hover:bg-blue-900/20 transition-all duration-200">
                 <Linkedin className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-slate-400 hover:text-slate-300 hover:bg-slate-700/50 transition-all duration-200">
-                <Github className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-slate-400 hover:text-green-400 hover:bg-green-900/20 transition-all duration-200">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-slate-400 hover:text-green-400 hover:bg-green-900/20 transition-all duration-200"
+                onClick={() => window.open('mailto:tryrebooted@gmail.com', '_self')}
+              >
                 <Mail className="w-5 h-5" />
               </Button>
             </div>
           </div>
 
-          {/* Product Links */}
-          {/* <div>
-            <h3 className="text-xl font-semibold mb-6 text-white">Product</h3>
-            <ul className="space-y-4">
-              <li>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Features</span>
-                  <Badge variant="outline" className="text-xs border-orange-600/30 text-orange-400 bg-orange-900/20">
-                    Soon
-                  </Badge>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Pricing</span>
-                  <Badge variant="outline" className="text-xs border-orange-600/30 text-orange-400 bg-orange-900/20">
-                    Soon
-                  </Badge>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Enterprise</span>
-                  <Badge variant="outline" className="text-xs border-orange-600/30 text-orange-400 bg-orange-900/20">
-                    Soon
-                  </Badge>
-                </div>
-              </li>
-              <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">API Docs</span></li>
-              <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Integrations</span></li>
-            </ul>
-          </div> */}
-
-          {/* Company Links */}
-          {/* <div>
-            <h3 className="text-xl font-semibold mb-6 text-white">Company</h3>
-            <ul className="space-y-4">
-              <li><a href="/about" className="text-slate-400 hover:text-purple-300 transition-colors">About</a></li>
-              <li>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Blog</span>
-                  <Badge variant="outline" className="text-xs border-orange-600/30 text-orange-400 bg-orange-900/20">
-                    Soon
-                  </Badge>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-400">Careers</span>
-                  <Badge variant="outline" className="text-xs border-green-600/30 text-green-400 bg-green-900/20">
-                    Hiring
-                  </Badge>
-                </div>
-              </li>
-              <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Contact</span></li>
-              <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Privacy</span></li>
-              <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Terms</span></li>
-            </ul>
-          </div> */}
+          {/* Contact Section */}
+          <div className="flex flex-col items-center lg:items-end gap-6 lg:mt-0 lg:min-w-[320px]">
+            <div className="text-center lg:text-right">
+              <h3 className="text-2xl font-semibold text-white mb-3">Get in Touch</h3>
+              <p className="text-slate-300 text-lg mb-6 max-w-xs">
+                Ready to transform your course creation process?
+              </p>
+            </div>
+            
+            <Button 
+              onClick={() => window.open('mailto:tryrebooted@gmail.com', '_self')}
+              size="lg"
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105 px-10 py-4 text-lg font-medium"
+            >
+              <Mail className="w-6 h-6 mr-3" />
+              Contact Us
+            </Button>
+            
+            <div 
+              onClick={copyEmailToClipboard}
+              className="flex items-center gap-3 text-slate-400 hover:text-slate-300 cursor-pointer transition-colors duration-200 group p-3 rounded-lg hover:bg-slate-800/30"
+            >
+              <span className="text-lg font-medium">tryrebooted@gmail.com</span>
+              {copyStatus === 'copied' ? (
+                <span className="text-base text-green-400 font-medium">Copied!</span>
+              ) : (
+                <Copy className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              )}
+            </div>
+          </div>
         </div>
 
         <Separator className="bg-slate-700 my-12" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex justify-center">
           <p className="text-slate-400 text-sm">
             © 2025 rebootED. All rights reserved.
           </p>

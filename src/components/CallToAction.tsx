@@ -90,10 +90,10 @@ const CallToAction = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Status badge */}
         <div className="flex justify-center mb-8">
-          <Badge variant="secondary" className="bg-slate-800/80 text-slate-300 border-slate-600 px-6 py-3 text-base font-medium backdrop-blur-sm">
+          <div className="inline-flex items-center bg-slate-800/80 text-slate-300 border border-slate-600 px-6 py-3 text-base font-medium backdrop-blur-sm rounded-full transition-transform duration-200 hover:scale-105">
             <Rocket className="w-4 h-4 mr-2 text-purple-400" />
             Early Access Program
-          </Badge>
+          </div>
         </div>
 
         {/* Enhanced stats */}

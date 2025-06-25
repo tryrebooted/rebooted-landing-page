@@ -7,7 +7,7 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Sarah Chen",
+      name: "Adamya Singh",
       role: "CEO & Co-Founder",
       bio: "Former Google engineer with 10+ years in AI and education technology. Passionate about empowering L&D teams with intelligent tools.",
       avatar: "/placeholder.svg",
@@ -17,7 +17,7 @@ const About = () => {
       github: "#"
     },
     {
-      name: "Marcus Rodriguez",
+      name: "David Heimowitz",
       role: "CTO & Co-Founder",
       bio: "Full-stack architect and machine learning expert. Previously led engineering teams at Microsoft and specialized in content generation tools.",
       avatar: "/placeholder.svg",
@@ -27,8 +27,8 @@ const About = () => {
       github: "#"
     },
     {
-      name: "Dr. Emily Watson",
-      role: "Head of Learning Science",
+      name: "Saakshi Munot",
+      role: "COO & Co-Founder",
       bio: "PhD in Cognitive Science from Stanford. Expert in instructional design optimization and educational content development systems.",
       avatar: "/placeholder.svg",
       initials: "EW",

@@ -1,11 +1,80 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Star, PenTool, Users, Sparkles, Rocket, Heart } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { ArrowRight, Star, PenTool, Users, Sparkles, Rocket, Heart, Mail, User } from "lucide-react";
+import { useState } from "react";
 
 const CallToAction = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.email || !formData.name) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // SheetDB typically expects data in this format
+      const now = new Date();
+      const payload = {
+        data: {
+          Name: formData.name,
+          Email: formData.email,
+          Company: formData.company || '',
+          Date: now.toLocaleDateString(),
+          Time: now.toLocaleTimeString(),
+        }
+      };
+
+      console.log('Sending payload:', payload);
+
+      const response = await fetch('https://sheetdb.io/api/v1/yd9piffcfld5y', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      console.log('Response status:', response.status);
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', company: '' });
+      } else {
+        const errorText = await response.text();
+        console.error('Error response:', errorText);
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 relative overflow-hidden">
+    <section id="waitlist-form" className="py-20 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 relative overflow-hidden">
       {/* Enhanced background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -14,14 +83,15 @@ const CallToAction = () => {
       </div>
 
       {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-white/5 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-purple-500/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-indigo-500/8 rounded-full blur-2xl animate-pulse delay-2000"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Status badge */}
         <div className="flex justify-center mb-8">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-6 py-3 text-base font-medium backdrop-blur-sm">
-            <Rocket className="w-4 h-4 mr-2" />
+          <Badge variant="secondary" className="bg-slate-800/80 text-slate-300 border-slate-600 px-6 py-3 text-base font-medium backdrop-blur-sm">
+            <Rocket className="w-4 h-4 mr-2 text-purple-400" />
             Early Access Program
           </Badge>
         </div>
@@ -82,23 +152,85 @@ const CallToAction = () => {
           </p>
         </div>
 
-        {/* Enhanced CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <Button 
-            size="lg" 
-            className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-6 text-xl font-medium transition-all duration-300 transform hover:scale-105 rounded-xl shadow-2xl hover:shadow-white/25"
-          >
-            <Heart className="mr-3 w-6 h-6" />
-            Join Waitlist
-            <ArrowRight className="ml-3 w-6 h-6" />
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-xl backdrop-blur-sm"
-          >
-            Learn More
-          </Button>
+                {/* Waitlist Form */}
+        <div className="max-w-md mx-auto mb-12">
+          {submitStatus === 'success' ? (
+            <div className="text-center p-8 bg-green-900/20 rounded-2xl border border-green-500/30 backdrop-blur-sm">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">You're on the list!</h3>
+              <p className="text-green-200">We'll notify you as soon as early access opens.</p>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="relative">
+                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <Input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  className="pl-12 py-4 bg-slate-800/50 border-slate-600 text-white placeholder:text-slate-400 rounded-xl backdrop-blur-sm focus:border-purple-500 focus:ring-purple-500/20"
+                />
+              </div>
+              
+              <div className="relative">
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="pl-12 py-4 bg-slate-800/50 border-slate-600 text-white placeholder:text-slate-400 rounded-xl backdrop-blur-sm focus:border-purple-500 focus:ring-purple-500/20"
+                />
+              </div>
+              
+              <div className="relative">
+                <PenTool className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <Input
+                  type="text"
+                  name="company"
+                  placeholder="Company (Optional)"
+                  value={formData.company}
+                  onChange={handleInputChange}
+                  className="pl-12 py-4 bg-slate-800/50 border-slate-600 text-white placeholder:text-slate-400 rounded-xl backdrop-blur-sm focus:border-purple-500 focus:ring-purple-500/20"
+                />
+              </div>
+              
+              <Button 
+                type="submit"
+                disabled={isSubmitting || !formData.name || !formData.email}
+                size="lg" 
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-white py-4 text-lg font-medium transition-all duration-300 transform hover:scale-105 rounded-xl shadow-2xl hover:shadow-purple-500/25"
+              >
+                {isSubmitting ? (
+                  <>
+                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-3" />
+                    Joining...
+                  </>
+                ) : (
+                  <>
+                    <Heart className="mr-3 w-5 h-5" />
+                    Join Waitlist
+                    <ArrowRight className="ml-3 w-5 h-5" />
+                  </>
+                )}
+              </Button>
+              
+              {submitStatus === 'error' && (
+                <p className="text-red-400 text-sm text-center mt-2">
+                  Something went wrong. Please try again.
+                </p>
+              )}
+            </form>
+          )}
         </div>
 
         {/* Enhanced benefits */}

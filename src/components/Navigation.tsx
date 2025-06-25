@@ -36,7 +36,7 @@ const Navigation = () => {
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-200 group-hover:w-full"></span>
             </Link>
-            <div className="text-slate-400 hover:text-slate-600 transition-colors duration-200 font-medium cursor-not-allowed relative group">
+            {/* <div className="text-slate-400 hover:text-slate-600 transition-colors duration-200 font-medium cursor-not-allowed relative group">
               Features
               <Badge variant="outline" className="absolute -top-2 -right-8 text-xs border-orange-200 text-orange-600 bg-orange-50">
                 Soon
@@ -47,14 +47,11 @@ const Navigation = () => {
               <Badge variant="outline" className="absolute -top-2 -right-8 text-xs border-orange-200 text-orange-600 bg-orange-50">
                 Soon
               </Badge>
-            </div>
+            </div> */}
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-slate-600 hover:text-purple-600 hover:bg-purple-50 transition-all duration-200">
-              Sign In
-            </Button>
+          <div className="hidden md:flex items-center">
             <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105">
               Join Waitlist
             </Button>
@@ -80,7 +77,7 @@ const Navigation = () => {
               >
                 About
               </Link>
-              <div className="text-slate-400 px-3 py-2 font-medium flex items-center justify-between">
+              {/* <div className="text-slate-400 px-3 py-2 font-medium flex items-center justify-between">
                 <span>Features</span>
                 <Badge variant="outline" className="text-xs border-orange-200 text-orange-600 bg-orange-50">
                   Soon
@@ -91,12 +88,9 @@ const Navigation = () => {
                 <Badge variant="outline" className="text-xs border-orange-200 text-orange-600 bg-orange-50">
                   Soon
                 </Badge>
-              </div>
+              </div> */}
               
-              <div className="pt-4 border-t border-slate-200/50 space-y-3">
-                <Button variant="ghost" className="w-full justify-start text-slate-600 hover:text-purple-600 hover:bg-purple-50 transition-all duration-200">
-                  Sign In
-                </Button>
+              <div className="pt-4 border-t border-slate-200/50">
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg">
                   Join Waitlist
                 </Button>

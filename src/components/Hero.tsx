@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { ArrowRight, PenTool, Sparkles, Zap } from "lucide-react";
+import { ArrowDown, PenTool, Sparkles, Zap } from "lucide-react";
 
 const Hero = () => {
+  const scrollToWaitlist = () => {
+    const waitlistSection = document.getElementById('waitlist-form');
+    if (waitlistSection) {
+      waitlistSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-slate-900 overflow-hidden">
       {/* Background decorative elements */}
@@ -55,7 +62,7 @@ const Hero = () => {
             </div>
             <Separator className="bg-slate-700 my-6 max-w-md mx-auto" />
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-              rebootEd empowers learning and development teams to create compelling, effective courses by
+              rebootED empowers learning and development teams to create compelling, effective courses by
               handling content generation, suggest interactive elements, and streamline the entire course development process.
             </p>
           </div>
@@ -76,31 +83,18 @@ const Hero = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex justify-center items-center mb-16">
             <Button 
+              onClick={scrollToWaitlist}
               size="lg" 
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-6 text-xl font-medium transition-all duration-300 transform hover:scale-105 rounded-xl shadow-2xl hover:shadow-purple-500/25"
             >
               Join Waitlist
-              <ArrowRight className="ml-3 w-6 h-6" />
-            </Button>
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-6 text-xl font-medium transition-all duration-300 transform hover:scale-105 rounded-xl shadow-2xl hover:shadow-purple-500/25"
-            >
-              Learn More
+              <ArrowDown className="ml-3 w-6 h-6" />
             </Button>
           </div>
 
-          {/* Bottom Icon with enhanced design */}
-          <div className="flex justify-center">
-            <div className="relative group">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110 shadow-2xl">
-                <PenTool className="w-10 h-10 text-white" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-300 -z-10"></div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>

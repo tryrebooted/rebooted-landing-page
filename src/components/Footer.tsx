@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl blur opacity-0 group-hover:opacity-50 transition-opacity duration-300 -z-10"></div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-3xl font-bold">rebootEd</span>
+                <span className="text-3xl font-bold">rebootED</span>
                 <Badge variant="secondary" className="bg-purple-900/50 text-purple-200 border-purple-700">
                   <Sparkles className="w-3 h-3 mr-1" />
                   Beta
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
           {/* Product Links */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-semibold mb-6 text-white">Product</h3>
             <ul className="space-y-4">
               <li>
@@ -84,10 +84,10 @@ const Footer = () => {
               <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">API Docs</span></li>
               <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Integrations</span></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Company Links */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-semibold mb-6 text-white">Company</h3>
             <ul className="space-y-4">
               <li><a href="/about" className="text-slate-400 hover:text-purple-300 transition-colors">About</a></li>
@@ -111,20 +111,15 @@ const Footer = () => {
               <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Privacy</span></li>
               <li><span className="text-slate-400 hover:text-purple-300 transition-colors cursor-pointer">Terms</span></li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <Separator className="bg-slate-700 my-12" />
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm">
-            © 2025 rebootEd. All rights reserved.
+            © 2025 rebootED. All rights reserved.
           </p>
-          <div className="flex items-center gap-2 mt-4 md:mt-0">
-            <span className="text-slate-400 text-sm">Built with</span>
-            <Heart className="w-4 h-4 text-red-400" />
-            <span className="text-slate-400 text-sm">for the future of course creation</span>
-          </div>
         </div>
       </div>
     </footer>

@@ -96,44 +96,6 @@ const CallToAction = () => {
           </div>
         </div>
 
-        {/* Enhanced stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="group">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 transform transition-all duration-300 group-hover:scale-105 group-hover:bg-white/15">
-              <div className="flex items-center justify-center mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center">
-                  <PenTool className="w-7 h-7 text-white" />
-                </div>
-              </div>
-              <div className="text-2xl font-bold text-white mb-2">Coming Soon</div>
-              <div className="text-blue-200 text-sm">AI Course Creator</div>
-            </div>
-          </div>
-          
-          <div className="group">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 transform transition-all duration-300 group-hover:scale-105 group-hover:bg-white/15">
-              <div className="flex items-center justify-center mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center">
-                  <Users className="w-7 h-7 text-white" />
-                </div>
-              </div>
-              <div className="text-2xl font-bold text-white mb-2">Join Us</div>
-              <div className="text-purple-200 text-sm">Be an Early Partner</div>
-            </div>
-          </div>
-          
-          <div className="group">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 transform transition-all duration-300 group-hover:scale-105 group-hover:bg-white/15">
-              <div className="flex items-center justify-center mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center">
-                  <Star className="w-7 h-7 text-white" />
-                </div>
-              </div>
-              <div className="text-2xl font-bold text-white mb-2">Shape</div>
-              <div className="text-yellow-200 text-sm">The Future</div>
-            </div>
-          </div>
-        </div>
 
         <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
           Be Part of the Future

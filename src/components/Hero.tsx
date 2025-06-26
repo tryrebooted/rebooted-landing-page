@@ -45,21 +45,6 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-6">
               Creating effective training courses is complex, expensive, and time-consuming.
             </p>
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <div className="text-xl md:text-2xl font-semibold text-purple-300">
-                "AI lets teams create custom learning in minutes, not weeks"
-              </div>
-              <a 
-                href="https://www.docebo.com/learning-network/blog/enterprise-ai-and-learning-development/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <Badge variant="outline" className="border-purple-400/30 text-purple-300 bg-purple-900/20">
-                  Docebo, 2025
-                </Badge>
-              </a>
-            </div>
             <Separator className="bg-slate-700 my-6 max-w-md mx-auto" />
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
               rebootED empowers learning and development teams to create compelling, effective courses by
@@ -83,7 +68,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="flex justify-center items-center mb-16">
+          {/* <div className="flex justify-center items-center mb-16">
             <Button 
               onClick={scrollToWaitlist}
               size="lg" 
@@ -92,7 +77,7 @@ const Hero = () => {
               Join Waitlist
               <ArrowDown className="ml-3 w-6 h-6" />
             </Button>
-          </div>
+          </div> */}
 
 
         </div>
